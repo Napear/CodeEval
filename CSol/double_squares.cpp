@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     int x;
     while (getline(stream, line)) {
         x = stoi(line);
-        
+
     }
 	return 0;
 }
