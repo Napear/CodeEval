@@ -31,6 +31,8 @@ int main(int argc, char const *argv[]) {
             } else {
                 output += " ";
             }
+
+
         }
         cout << output;
     }
