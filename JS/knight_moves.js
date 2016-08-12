@@ -15,6 +15,7 @@
  Each position is indicated in a new line.
  */
 var fs = require("fs");
+//provides modifiers for left up/down and right up/down
 const DIRECTIONS = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
 
 function move(position, x, y) {
@@ -56,8 +57,8 @@ fs.readFileSync(process.argv[2]).toString().split('\n').forEach(function (line) 
     var position = parsePosition(line);
     for (var i = 0; i < DIRECTIONS.length; i++) {
       var dir = DIRECTIONS[i];
-      addIfValid(validMove(position, 2 * dir[0], dir[1]), moves);
-      addIfValid(validMove(position, dir[0], 2 * dir[1]), moves);
+      addIfValid(validMove(position, 2 * dir[0], dir[1]), moves); // wide moves
+      addIfValid(validMove(position, dir[0], 2 * dir[1]), moves); // tall moves
     }
     console.log(moves.sort().join(' '));
   }
