@@ -1,5 +1,5 @@
 /**
- * https://www.codeeval.com/open_challenges/180
+ * https://www.codeeval.com/browse/180/
  * CHALLENGE DESCRIPTION:
 
  In chess, the knight moves to any of the closest squares that are not on the same rank, file, or diagonal. Thus the move is in the “L” form: two squares vertically and one square horizontally, or two squares horizontally and one square vertically:
