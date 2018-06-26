@@ -22,6 +22,7 @@ set(SOURCE_FILES
         #detecting_cycles.cpp
         #cash_register.cpp
         #trailing_string.cpp
-        double_squares.cpp
+#        double_squares.cpp
+        mixed_content.cpp
         )
 add_executable(CodeEval ${SOURCE_FILES})
